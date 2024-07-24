@@ -1,0 +1,62 @@
+DROP TABLE IF EXISTS TAB_GESTION_USUARIOS CASCADE;
+
+CREATE TABLE TAB_GESTION_USUARIOS(
+	IDENTIFICADOR_INT INT PRIMARY KEY,
+	NOMBRES_VAR VARCHAR(50) NOT NULL,
+	A_PATERNO_VAR VARCHAR(50) NOT NULL,
+	A_MATERNO_VAR VARCHAR(50) NOT NULL,
+	CORREO_VAR VARCHAR(100) NOT NULL,
+	CU_VAR VARCHAR(100) NOT NULL,
+	ESTATUS_INT INT DEFAULT 1
+);
+
+INSERT INTO TAB_GESTION_USUARIOS(
+    IDENTIFICADOR_INT,
+    NOMBRES_VAR,
+    A_PATERNO_VAR,
+    A_MATERNO_VAR,
+    CORREO_VAR,
+    CU_VAR,
+    ESTATUS_INT)
+VALUES(
+    1,
+    'Aaron',
+    'Perez',
+    'Hernandez',
+    'aaron.027@gmail.com',
+    'aaron.027#',
+    1);
+
+INSERT INTO TAB_GESTION_USUARIOS(
+    IDENTIFICADOR_INT,
+    NOMBRES_VAR,
+    A_PATERNO_VAR,
+    A_MATERNO_VAR,
+    CORREO_VAR,
+    CU_VAR,
+    ESTATUS_INT)
+VALUES(
+    2,
+    'Marco',
+    'Hernandez',
+    'Juarez',
+    'marco.028@gmail.com',
+    'marco.028#',
+    1);
+
+INSERT INTO TAB_GESTION_USUARIOS(
+    IDENTIFICADOR_INT,
+    NOMBRES_VAR,
+    A_PATERNO_VAR,
+    A_MATERNO_VAR,
+    CORREO_VAR,
+    CU_VAR,
+    ESTATUS_INT)
+VALUES(
+    3,
+    'Brayan',
+    'Santos',
+    'Meza',
+    'brayan.029@gmail.com',
+    'brayan.029#',
+    1);
